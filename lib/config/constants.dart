@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:go_tmp/config/size_config.dart';
+import 'package:gotmp/config/size_config.dart';
 
 const kTextColor = Color(0xFFFFFFFF);
 const kPrimaryColor = Color(0xFF06b3fa);
@@ -47,7 +47,7 @@ final otpInputDecoration = InputDecoration(
 
 OutlineInputBorder outlineInputBorder() {
   return OutlineInputBorder(
-    borderSide: BorderSide(color: kTextColor),
+    borderSide: const BorderSide(color: kTextColor),
     borderRadius: BorderRadius.circular(getProportionateScreenWidth(15)),
   );
 }
@@ -67,6 +67,6 @@ class BaseUrl {
 
 class UserGetAPI {
   static Future getUsers() {
-    return http.get(BaseUrl.user);
+    return http.get(Uri.parse(BaseUrl.user));
   }
 }

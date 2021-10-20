@@ -1,22 +1,22 @@
-// import 'package:here_sdk/core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:go_tmp/config/theme.dart';
-import 'package:go_tmp/config/routes.dart';
-import 'package:go_tmp/controllers/Splash.dart';
+import './config/routes.dart';
+import 'config/theme.dart';
+import 'controllers/splash_controller.dart';
 
 void main() {
-  // SdkContext.init(IsolateOrigin.main);
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setEnabledSystemUIOverlays([]);
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: []);
     return MaterialApp(
       debugShowCheckedModeBanner: false, //Disable Debud banner on right top app
-      title: 'GO TMP',
+      title: 'GoTMP',
       theme: theme(), //Theme for this App
       initialRoute: SplashScreen.routeName, //Redirect to Intro Screen
       routes: routes, //Setup Routes from routers.dart
