@@ -1,14 +1,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.gotmp">
+
+   <uses-permission android:name="android.permission.INTERNET" />
+   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+   
    <application
         android:label="GoTMP"
         android:icon="@mipmap/launcher_icon">
-
         <meta-data android:name="com.here.sdk.access_key_id" android:value="XXhCWZZrx6RWNSRrkWX1iA"/>
         <meta-data android:name="com.here.sdk.access_key_secret" android:value="ks6lz-b84AcfsqXA70-N4BGB6NB8kqPHMHBURedmc_A4DivCSDw4ThpqFiVFcmn0KzsVaVF2zU3qj1GVOE1K7A"/>
-        <uses-permission android:name="android.permission.INTERNET" />
-        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-        
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
