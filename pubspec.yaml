@@ -1,59 +1,45 @@
-name: go_tmp
-description: A new Flutter project.
-
-publish_to: "none" # Remove this line if you wish to publish to pub.dev
-
-version: 1.0.0+1
+name: gotmp
+description: Help you to find your TMP
+publish_to: "none"
+version: 0.0.1+1
 
 environment:
-  sdk: ">=2.10.0 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.0
-  # here_sdk:
-  # path: plugins/here_sdk
-  flutter_svg: ^0.19.0
-  shared_preferences: ^0.5.12+4
-  curved_navigation_bar: ^0.3.7
-  lottie: ^0.7.0+1
-  # provider: ^4.3.2 # for State management
-  http: ^0.12.0
-  # flutter_bloc: ^6.1.1
-  location: ^3.2.1
-  fl_chart: ^0.12.2
-  geocoding: ^1.0.5
-  fluttertoast: ^7.1.6
+  cupertino_icons: ^1.0.2
 
 dev_dependencies:
-  flutter_launcher_name: "^0.0.1"
-  flutter_launcher_icons: "^0.8.1"
   flutter_test:
     sdk: flutter
-
-flutter_launcher_name:
-  name: "TheSiS App"
+  flutter_lints: ^1.0.0
+  http: ^0.13.4
+  lottie: ^1.2.1
+  flutter_app_name: ^0.1.0
+  flutter_launcher_icons: "^0.9.2"
 
 flutter_icons:
   android: "launcher_icon"
   ios: true
-  image_path: "assets/icons/ic_logo.png"
+  image_path: "assets/img/logo.png"
+  remove_alpha_ios: true
+
+flutter_app_name:
+  name: "GoTMP"
 
 flutter:
   uses-material-design: true
   assets:
-    - assets/icons/
-    - assets/images/
+    - assets/fonts/
+    - assets/img/
     - assets/lottie/
-
-fonts:
-  - family: Proxima
-    fonts:
-      - asset: assets/fonts/Proxima.otf
-      - asset: assets/fonts/Proxima-Italic.otf
-        style: italic
-      - asset: assets/fonts/Proxima-Bold.otf
-        weight: 700
-      - asset: assets/fonts/Proxima-Light.otf
-        weight: 300
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Italic.ttf
+          style: italic
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700

@@ -1,14 +1,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.go_tmp">
-    <!-- io.flutter.app.FlutterApplication is an android.app.Application that
-         calls FlutterMain.startInitialization(this); in its onCreate method.
-         In most cases you can leave this as-is, but you if you want to provide
-         additional functionality it is fine to subclass or reimplement
-         FlutterApplication and put your custom class here. -->
-    <application
-        android:name="io.flutter.app.FlutterApplication"
-        android:label="go_tmp"
-        android:icon="@mipmap/ic_launcher">
+    package="com.example.gotmp">
+   <application
+        android:label="GoTMP"
+        android:icon="@mipmap/launcher_icon">
+
+        <meta-data android:name="com.here.sdk.access_key_id" android:value="XXhCWZZrx6RWNSRrkWX1iA"/>
+        <meta-data android:name="com.here.sdk.access_key_secret" android:value="ks6lz-b84AcfsqXA70-N4BGB6NB8kqPHMHBURedmc_A4DivCSDw4ThpqFiVFcmn0KzsVaVF2zU3qj1GVOE1K7A"/>
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
