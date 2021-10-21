@@ -11,8 +11,8 @@
 ._*
 
 # plugins file
-/plugins/
-
+plugins/*
+!plugins/README.md
 
 # IntelliJ related
 *.iml
